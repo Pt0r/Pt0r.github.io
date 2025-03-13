@@ -3,25 +3,28 @@ body {
 }
 
 .scrollWrapper {
-    max-width: 100%;
+    position: absolute;
+    top: 50%;
     overflow: hidden;
     font-family: "Rubik Mono One", monospace;
     font-weight: 400;
     font-style: normal;
+    font-size: 40pt;
+    color: #e3e3e3;
   }
   
   .textAni {
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    animation: textAni 10s linear infinite;
+    animation: textAni 3s linear infinite;
   }
-    
+
   @keyframes textAni {
     0% {
       transform: translate3d(0, 0, 0);
     }
     100% {
-      transform: translate3d(-50%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
     }
   }
