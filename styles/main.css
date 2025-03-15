@@ -1,55 +1,9 @@
 body {
   background-color: #1a1a1a;
   margin: none;
+  display: flex;
 }
 
-.scrollWrapper {
-  overflow: clip;
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  font-family: "Rubik Mono One", monospace;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 40pt;
-  color: #e3e3e3;
-}
-  
-.textAni {
-  display: flex;       
-  width: max-content;
-  white-space: nowrap;
-  animation: textAni 5s linear infinite;
-}
-
-@keyframes textAni {
-  to { 
-    transform: translateX(-50%); 
-  }
-}
-
-img {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-}
-
-.topLeftGif {
-  top: 0px;
-  left: 0px;
-}
-
-.topRightGif {
-  top: 0px;
-  right: 0px;
-}
-
-.bottomLeftGif {
-  bottom: 0px;
-  left: 0px;
-}
-
-.bottomRightGif {
-  bottom: 0px;
-  right: 0px;
+canvas {
+  border: 1px, wheat, solid;
 }
