@@ -16,14 +16,23 @@ nav {
   margin-left: 20%;
   font-family: "Metamorphous", serif;
 	display: flex;
+  align-items: flex-start;
+}
+
+nav div {
+  display: flex;
   align-items: center;
+  height: 70%;
 }
 
 nav a { 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
   color: #ebebeb;
 	text-decoration: none;
-  display:inline-block;
-  margin-right: 20px;
+  min-width: 100px;
 }
 
 nav a:hover {
@@ -35,7 +44,7 @@ nav .home {
   font-family: "Emilys Candy", serif;
   font-style: normal;
   margin-right: 40px;
-  padding: 0;
+  margin-top: 5px;
 }
 
 nav .home a:hover {
@@ -48,7 +57,8 @@ nav .social {
 }
 
 nav .social a {
-  margin: 0;
+  min-width: 0px;
+  margin: 0 5px;
   width: 24px;
   height: 24px;
 }
@@ -56,7 +66,7 @@ nav .social a {
 .homeContent {
   margin-left: 20%;
   margin-right: 20%;
-  margin-top: 70px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +75,7 @@ nav .social a {
 .talentContent {
   margin-left: 20%;
   margin-right: 20%;
-  margin-top: 70px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
 }
