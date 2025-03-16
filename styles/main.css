@@ -1,55 +1,103 @@
 body {
-  background-color: #1a1a1a;
+  background-color: #1f1f1f;
+  color: #ebebeb;
   margin: none;
 }
 
-.scrollWrapper {
-  overflow: clip;
-  position: absolute;
+header {
   width: 100%;
-  top: 50%;
-  font-family: "Rubik Mono One", monospace;
-  font-weight: 400;
+  position: fixed;
+  top: 0;
+  background-color: #1f1f1f;
+}
+
+nav {
+  height: 70px;
+  margin-left: 20%;
+  font-family: "Metamorphous", serif;
+	display: flex;
+  align-items: center;
+}
+
+nav a { 
+  color: #ebebeb;
+	text-decoration: none;
+  display:inline-block;
+  margin-right: 20px;
+}
+
+nav a:hover {
+	background-color: #9288f8
+}
+
+nav .home {
+  font-size: 40px;
+  font-family: "Emilys Candy", serif;
   font-style: normal;
-  font-size: 40pt;
-  color: #e3e3e3;
-}
-  
-.textAni {
-  display: flex;       
-  width: max-content;
-  white-space: nowrap;
-  animation: textAni 5s linear infinite;
+  margin-right: 40px;
+  padding: 0;
 }
 
-@keyframes textAni {
-  to { 
-    transform: translateX(-50%); 
-  }
+nav .home a:hover {
+  background-color: #1f1f1f;
 }
 
-img {
-  width: 100px;
-  height: 100px;
-  position: absolute;
+nav .social {
+  margin-left: auto;
+  margin-right: 2%;
 }
 
-.topLeftGif {
-  top: 0px;
-  left: 0px;
+nav .social a {
+  margin: 0;
+  width: 24px;
+  height: 24px;
 }
 
-.topRightGif {
-  top: 0px;
-  right: 0px;
+.homeContent {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.bottomLeftGif {
-  bottom: 0px;
-  left: 0px;
+.talentContent {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
 }
 
-.bottomRightGif {
-  bottom: 0px;
-  right: 0px;
+.talentContent h1 {
+  margin-bottom: 0;
+}
+
+.talentContainer {
+  display: flex;
+  margin-bottom: 20%;
+}
+
+.talentInfo {
+  display: inline-block;
+  width: 66%;
+}
+
+.talentPng {
+  display: inline-block;
+  width: 33%;
+}
+
+.talentPng img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1 {
+  font-family: "Metamorphous", serif;
+}
+
+p {
+  font-family: "Metamorphous", serif;
 }
