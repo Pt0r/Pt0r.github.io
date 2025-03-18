@@ -9,23 +9,32 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Metamorphous&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="app">
             <header>
                 <nav>
                     <div class="home">
-                        <a href="#" onclick="changeContent('home')">
+                        <a href="/index.html" >
                             CoVen
                         </a>
                     </div>                    
-                    <div>
-                        <a href="#" onclick="changeContent('talent')">
+                    <div hx-boost="true">
+                        <a 
+                        hx-push-url="true"
+                        hx-post="/pages/talents.html"
+                        hx-target="#content"
+                        hx-swap="innerHTML">
                             Talent
                         </a>
                     </div>                    
-                    <div>
-                        <a href="#" onclick="changeContent('staff')">
+                    <div hx-boost="true">
+                        <a 
+                        hx-push-url="true"
+                        hx-post="/pages/staff.html"
+                        hx-target="#content"
+                        hx-swap="innerHTML">
                             Staff
                         </a>
                     </div>                    
@@ -43,32 +52,29 @@
                     </div>
                 </nav>
             </header>
-            <main>
-                <div id="content">
-                    <div class="homeContent">
-                        <h1>Introduction</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt vulputate tempor. 
-                            Etiam venenatis auctor semper. Vestibulum porta ultrices libero, ut interdum massa maximus et. 
-                            Praesent ut nibh auctor, commodo risus quis, rutrum orci. Morbi pulvinar, nisl id sollicitudin vestibulum, ante lacus luctus nisl, a bibendum lacus ex ut risus.
-                        </p>
-                        <p>
-                            Donec molestie turpis vel cursus maximus. Donec maximus sapien nec sodales tincidunt. Mauris nec posuere sapien. Maecenas iaculis magna sit amet molestie ornare. 
-                            Nunc maximus, nunc eu placerat rhoncus, nibh felis dictum ex, non faucibus dui odio in augue. Maecenas tempus hendrerit neque, sit amet ultricies tellus viverra sed.
-                            Sed vulputate sapien sit amet est placerat feugiat. Vestibulum malesuada gravida tortor ut lobortis. Sed non sem commodo, interdum nisl ac, rutrum velit. 
-                            In hac habitasse platea dictumst.
-                        </p> 
-                        <p>
-                            Sed eget lacus pretium, aliquam dolor et, cursus eros. Fusce et lorem purus. Praesent vitae viverra magna, at facilisis sem.
-                            Donec auctor faucibus cursus. Fusce pulvinar est vel mi convallis ullamcorper. Aliquam tincidunt nec nisl a sodales. Curabitur varius massa sodales aliquet congue.
-                            Maecenas condimentum lorem ut sem faucibus efficitur. Pellentesque malesuada ex nec vulputate viverra. Sed vel enim rutrum, interdum ex at, iaculis metus.
-                            Nullam non nunc quis lorem varius euismod. Cras vitae risus nec nisi sodales imperdiet. 
-                            Nunc pulvinar sem arcu, nec euismod eros sollicitudin ut. 
-                        </p>
-                    </div>
+            <main id="content">
+                <div class="homeContent">
+                    <h1>Introduction</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt vulputate tempor. 
+                        Etiam venenatis auctor semper. Vestibulum porta ultrices libero, ut interdum massa maximus et. 
+                        Praesent ut nibh auctor, commodo risus quis, rutrum orci. Morbi pulvinar, nisl id sollicitudin vestibulum, ante lacus luctus nisl, a bibendum lacus ex ut risus.
+                    </p>
+                    <p>
+                        Donec molestie turpis vel cursus maximus. Donec maximus sapien nec sodales tincidunt. Mauris nec posuere sapien. Maecenas iaculis magna sit amet molestie ornare. 
+                        Nunc maximus, nunc eu placerat rhoncus, nibh felis dictum ex, non faucibus dui odio in augue. Maecenas tempus hendrerit neque, sit amet ultricies tellus viverra sed.
+                        Sed vulputate sapien sit amet est placerat feugiat. Vestibulum malesuada gravida tortor ut lobortis. Sed non sem commodo, interdum nisl ac, rutrum velit. 
+                        In hac habitasse platea dictumst.
+                    </p> 
+                    <p>
+                        Sed eget lacus pretium, aliquam dolor et, cursus eros. Fusce et lorem purus. Praesent vitae viverra magna, at facilisis sem.
+                        Donec auctor faucibus cursus. Fusce pulvinar est vel mi convallis ullamcorper. Aliquam tincidunt nec nisl a sodales. Curabitur varius massa sodales aliquet congue.
+                        Maecenas condimentum lorem ut sem faucibus efficitur. Pellentesque malesuada ex nec vulputate viverra. Sed vel enim rutrum, interdum ex at, iaculis metus.
+                        Nullam non nunc quis lorem varius euismod. Cras vitae risus nec nisi sodales imperdiet. 
+                        Nunc pulvinar sem arcu, nec euismod eros sollicitudin ut. 
+                    </p>
                 </div>
             </main>
         </div>
-        <script src="/scripts/main.js"></script>    
     </body>
 </html>
