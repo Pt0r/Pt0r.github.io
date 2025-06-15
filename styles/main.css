@@ -11,24 +11,33 @@ header {
   background-color: #1f1f1f;
 }
 
+header .bigLogo {
+  text-align: center;
+  font-size: 80px;
+  font-family: "Emilys Candy", serif;
+  font-style: normal;
+}
+
 nav {
-  height: 70px;
-  margin-left: 20%;
+  height: 50px;
   font-family: "Metamorphous", serif;
 	display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 
 nav div {
   display: flex;
   align-items: center;
-  height: 70%;
+  height: 100%;
 }
 
 nav a { 
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   height: 100%;
   color: #ebebeb;
 	text-decoration: none;
@@ -40,34 +49,10 @@ nav a:hover {
 	background-color: #9288f8
 }
 
-nav .home {
-  font-size: 40px;
-  font-family: "Emilys Candy", serif;
-  font-style: normal;
-  margin-right: 40px;
-  margin-top: 5px;
-}
-
-nav .home a:hover {
-  background-color: #1f1f1f;
-}
-
-nav .social {
-  margin-left: auto;
-  margin-right: 2%;
-}
-
-nav .social a {
-  min-width: 0px;
-  margin: 0 5px;
-  width: 24px;
-  height: 24px;
-}
-
 .homeContent {
   margin-left: 20%;
   margin-right: 20%;
-  margin-top: 100px;
+  margin-top: 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
